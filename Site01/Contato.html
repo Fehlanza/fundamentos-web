@@ -27,18 +27,19 @@
 
     <form>
         <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id= "txtNome"></div>
         <br>
         <label for="email">Email:</label> <br>
-        <input type="email" id="email">
+        <input type="email" id="email"onkeyup='validaEmail()'>
+        <div id= "txtEmail"></div>
         <br>
         <br>
         <label for="assunto">Assunto:</label> <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+        <div id= "txtAssunto"></div>
         <br>
-        <br>
-        <button>Enviar</button>
+        <button onclick="enviar()" >Enviar</button>
     </form>
 </div>
 
@@ -56,6 +57,8 @@
     <p class="center">
     Todos os direitos reservados para: Fernanda Lanza &copy</p>
 </footer>
+
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
